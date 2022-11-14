@@ -8,4 +8,4 @@ select * from tb_cliente where not(barrio = 'el carrino' or year (fecha_nacimien
 
 #these're statements is the same 9 and 10
 select * from tb_cliente where direccion in ('los alagos','condensa');
-select * from tb_cliente where direccion = 'los alagos' or 'condensa';
+select * from tb_cliente where direccion = 'los alagos' or direccion = 'condensa';
