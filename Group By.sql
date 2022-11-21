@@ -10,6 +10,11 @@ SELECT * FROM tb_productos;
 /* Hace una seleccion del precio maximo y precio minimo de los productos agrupandolos por envase y donde la suma de todos es mayor a 20 */
 SELECT descripcion , max(precio_lista), min(precio_lista) from tb_productos GROUP BY descripcion HAVING sum(precio_lista) > 20;
 /* Hace una seleccion del precio maximo y precio minimo de los productos agrupandolos por envase y donde la suma de todos es menor a 20 */
+
+/*Este comando es usado despues del  Group BY*/
+
 SELECT descripcion , max(precio_lista), min(precio_lista) from tb_productos GROUP BY descripcion HAVING sum(precio_lista) < 20;
+
+
 
 
