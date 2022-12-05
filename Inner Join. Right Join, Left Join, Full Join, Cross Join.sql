@@ -36,3 +36,30 @@ facturas B
 ON
 A.dni = B.dni
 ORDER BY A.nombre, B.matricula;
+
+SELECT * FROM tb_vendedor;
+SELECT * FROM tb_cliente;
+
+SELECT tb_vendedor.nombre , tb_vendedor.barrio, 
+tb_cliente.nombre, tb_cliente.barrio FROM tb_vendedor
+INNER JOIN
+tb_cliente 
+ON
+tb_cliente.barrio = tb_vendedor.barrio;
+
+#Este comando es el mismo que el de arriba solo que el de arriba es mas especifico este es mas general
+SELECT A.nombre, A.barrio, B.nombre, B.barrio FROM tb_vendedor A
+INNER JOIN
+tb_cliente B
+ON A.barrio = B.barrio;
+
+/*comando para decirnos que vendedores no estan atendiendo a nuestros clientes
+command for say us that sends attend to our customers*/
+
+SELECT A.nombre,  A.barrio, B.nombre , B.barrio FROM tb_cliente A 
+LEFT JOIN 
+tb_vendedor
+ON A.barrio = B.barrio;
+
+
+
