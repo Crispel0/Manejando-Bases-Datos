@@ -5,3 +5,6 @@ SELECT * FROM tbproductos;
 
 UPDATE tbproductos SET Precio = 1.9 , nombre = 'Festival Sabores' WHERE producto = '243083';
 UPDATE tbproductos SET volumen = '1.5 Litros' WHERE producto = '695594'; 
+
+UPDATE tabla_de_clientes SET DIRECCION_1 = 'Jorge Emilio 23', BARRIO = 'San Antonio' , CIUDAD = 'Guadalajara', ESTADO = "JA" , CP = '44700000' WHERE DNI = '5840119709';
+SELECT * FROM tabla_de_clientes WHERE DNI = '5840119709';
