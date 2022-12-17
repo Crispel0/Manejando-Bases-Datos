@@ -58,8 +58,12 @@ command for say us that sends attend to our customers*/
 
 SELECT A.nombre,  A.barrio, B.nombre , B.barrio FROM tb_cliente A 
 LEFT JOIN 
-tb_vendedor
+tb_vendedor B
 ON A.barrio = B.barrio;
 
-
-
+#Nos traera todos los clientes que no tienen vendedores es todo lo contrario al comando de arriba
+SELECT A.nombre, A.barrio, B.nombre, B.barrio FROM tb_cliente A
+RIGHT JOIN
+tb_vendedor B
+ON 
+A.barrio = B.barrio; 
