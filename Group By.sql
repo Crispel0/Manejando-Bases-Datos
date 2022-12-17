@@ -15,6 +15,16 @@ SELECT descripcion , max(precio_lista), min(precio_lista) from tb_productos GROU
 
 SELECT descripcion , max(precio_lista), min(precio_lista) from tb_productos GROUP BY descripcion HAVING sum(precio_lista) < 20;
 
+INSERT INTO tabla_de_productos VALUES('154786547','Frutos Del Bosque','1/2 litro','mandarina','Botella', 5.60),
+('154786548','Sabor en cada momento','1 litro','Pera','Lata', 7.00),
+('15475543','Sabores Sorprendentes','2 litro','Freijoa','Lata', 6.48),
+('154787455','Frutos del sabor','1 litro','Fresa','Lata', 10.00),
+('154783453','Frutos Deliciosos','2 litro','Manzana','Botella', 8.00),
+('154786654','El Activador','1/2 litro','Banano','Botella', 3.25),
+('154786534','Tranquilizante','1 litro','Guarana','Lata', 5.80),
+('154786234','Refrescos','2 litro','Sandia','Botella ', 7.69),
+('154786425','Sabor Alpino','!/2 litro','Guayaba','Botella', 7.62)
+
 
 
 
